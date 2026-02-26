@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form>
+    <h3 style="text-align:center;">REGISTRATION FORM</h3>
+
+    <div>
+        <label>First Name</label>
+        <input type="text" id="FirstName">
+        <span id="fnameError" style="color:red"></span>
+    </div>
+
+    <div>
+        <label>Last Name</label>
+        <input type="text" id="LastName">
+        <span id="lnameError" style="color:red"></span>
+    </div>
+
+    <div>
+        <label>Email</label>
+        <input type="email" id="Email">
+        <span id="emailError" style="color:red"></span>
+    </div>
+
+    <div>
+        <label>Contact</label>
+        <input type="tel" id="Contact">
+        <span id="contactError" style="color:red"></span>
+    </div>
+
+    <div>
+        <label>Gender</label><br>
+        <select id="Gender">
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+        <span id="genderError" style="color:red"></span>
+    </div>
+
+    <div>
+        <label>Date of Birth</label>
+        <input type="date" id="Dob">
+        <span id="dobError" style="color:red"></span>
+    </div>
+
+    <button type="button" onclick="validateForm()">Register</button>
+
+    <script src="script.js"></script>
+</form>
+
+</body>
+</html>
